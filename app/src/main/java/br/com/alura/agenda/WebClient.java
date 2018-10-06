@@ -8,18 +8,20 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class WebClient {
-    public String  post(String json)  {
+    public String post(String json)  {
         try {
             URL url = new URL("https://www.caelum.com.br/mobile");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
-            //para avisar o tipo de conteúdo que o método está enviando
-            connection.setRequestProperty("Content-type","application/json");
-
             //para avisar o tipo de conteúdo que a aplicação deseja como retorno
             connection.setRequestProperty("Accept","application/json");
 
+            //para avisar o tipo de conteúdo que o método está enviando
+            connection.setRequestProperty("Content-type","application/json");
+
+
             //o valor true representa que queremos realizar um post
+            connection.setDoInput(true);
             connection.setDoOutput(true);
 
             //para escrever a requisição para o servidor
