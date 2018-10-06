@@ -12,12 +12,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.List;
 
 import br.com.alura.agenda.adapter.AlunosAdapter;
-import br.com.alura.agenda.converter.AlunoConverter;
 import br.com.alura.agenda.dao.AlunoDAO;
 import br.com.alura.agenda.modelo.Aluno;
 
@@ -82,16 +80,9 @@ public class ListaAlunosActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_enviar_notas:
-                AlunoDAO dao = new AlunoDAO(this);
-                List<Aluno> alunos = dao.buscarAlunos();
-                dao.close();
+                new EnviaAlunosTask(this).execute();
+                break;
 
-                AlunoConverter conversor = new AlunoConverter();
-                String json = conversor.converterParaJson(alunos);
-                WebClient client = new WebClient();
-                String resposta = client.post(json);
-
-                Toast.makeText(this,resposta, Toast.LENGTH_LONG).show();
         }
         return super.onOptionsItemSelected(item);
     }
