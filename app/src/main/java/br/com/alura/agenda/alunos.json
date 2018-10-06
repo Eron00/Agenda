@@ -1,0 +1,29 @@
+{
+  "List":
+  [
+    {
+      "aluno":
+      [
+        {
+          "id": "1",
+          "nome":"Eron",
+          "endereco":"ddddddd",
+          "telefone":"88888888",
+          "site":"www.uol.com.br",
+          "nota":"4"
+        },
+
+        {
+          "id": "2",
+          "nome":"Thiago",
+          "endereco":"Rua tres",
+          "telefone":"15975321",
+          "site":"www.mercadolivre.com",
+          "nota":"0"
+        }
+      ]
+    }
+  ]
+}
+
+
