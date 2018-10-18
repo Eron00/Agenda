@@ -5,6 +5,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
+import br.com.alura.agenda.Fragments.DetalhesProvaFragment;
+import br.com.alura.agenda.Fragments.ListaProvasFragment;
+
 public class ProvasActivity extends AppCompatActivity {
 
     @Override

@@ -1,4 +1,4 @@
-package br.com.alura.agenda;
+package br.com.alura.agenda.Helper;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -6,6 +6,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 
+import br.com.alura.agenda.FormularioActivity;
+import br.com.alura.agenda.R;
 import br.com.alura.agenda.modelo.Aluno;
 
 /**

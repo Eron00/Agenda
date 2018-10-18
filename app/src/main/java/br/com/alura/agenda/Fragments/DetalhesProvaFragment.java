@@ -1,4 +1,4 @@
-package br.com.alura.agenda;
+package br.com.alura.agenda.Fragments;
 
 
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-;
+;import br.com.alura.agenda.R;
 
 public class DetalhesProvaFragment extends Fragment {
 

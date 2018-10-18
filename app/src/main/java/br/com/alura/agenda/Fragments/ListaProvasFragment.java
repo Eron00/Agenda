@@ -1,4 +1,4 @@
-package br.com.alura.agenda;
+package br.com.alura.agenda.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,8 @@ import android.widget.Toast;
 import java.util.Arrays;
 import java.util.List;
 
+import br.com.alura.agenda.DetalhesProvaActivity;
+import br.com.alura.agenda.R;
 import br.com.alura.agenda.modelo.Prova;
 
 public class ListaProvasFragment extends Fragment {
